@@ -1,0 +1,21 @@
+.table-uk-container {
+  margin-top: 50px;
+}
+
+.uk-button-left {
+  margin-right: 20px;
+}
+
+.uk-create-icon {
+  margin-right: 10px;
+}
+
+.uk-project-header {
+  padding-top: 20px;
+}
+
+.uk-button-warning {
+  background-color: #faa05a;
+  color: white;
+  border: 1px solid transparent;
+}

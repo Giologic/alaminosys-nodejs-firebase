@@ -1,0 +1,63 @@
+<div class="uk-flex uk-flex-between uk-flex-middle">
+<div class="uk-margin">
+    <legend class="uk-project-header uk-legend">Projects</legend>
+</div>
+<div class="uk-margin">
+    <a href="#" class="uk-button uk-button-primary"><span class="uk-create-icon" uk-icon="icon: plus-circle"></span>Create</a>
+</div>
+</div>
+<div class="uk-flex uk-flex-between">
+    <div class="uk-margin">
+        <form class="uk-search uk-search-default">
+            <a href="" uk-search-icon></a>
+            <input class="uk-search-input" type="search" placeholder="Search Project">
+        </form>
+    </div>
+    <form>                
+        <div class="uk-margin">
+            <div uk-form-custom="target: > * > span:first-child">
+                <select>
+                    <option value="">Barangay</option>
+                    <option value="1">Alos</option>
+                    <option value="2">Amandiego</option>
+                </select>
+                <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+            <div uk-form-custom="target: > * > span:first-child">
+                <select>
+                    <option value="">Status</option>
+                    <option value="1">Draft</option>
+                    <option value="2">Pending</option>
+                </select>
+                <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<table class="uk-table uk-table-small uk-table-divider">
+    <thead>
+        <tr>
+            <th>Date Posted</th>
+            <th>Title</th>
+            <th>Barangay</th>
+            <th>Status</th>
+            <th>Remarks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>May 22, 2019</b></td>
+            <td>Hunger Mitigation Program</td>
+            <td>Amandiego</td>
+            <td><span class="uk-label uk-label-default">Draft</span></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
