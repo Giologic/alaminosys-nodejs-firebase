@@ -1,22 +1,22 @@
-<form>
+<form method="POST">
   <fieldset class="uk-fieldset">
     <legend class="uk-legend">Create Project</legend>
 
     <div class="uk-margin">
       <label class="uk-form-label">Project Title</label>
-      <input class="uk-input" type="text" placeholder="Project Title">
+      <input name="title" class="uk-input" type="text" placeholder="Project Title">
     </div>
 
     <div class="uk-margin">
         <label class="uk-form-label">Project Description</label>
-      <textarea class="uk-textarea" rows="10" placeholder="Project Description"></textarea>
+      <textarea name="description" class="uk-textarea" rows="10" placeholder="Project Description"></textarea>
     </div>
   </fieldset>
   <hr>
   <fieldset class="uk-fieldset">
     <div class="uk-margin">
       <label class="uk-form-label">Barangay</label>
-      <select class="uk-select">
+      <select name="barangay" class="uk-select">
         <option>Alos</option>
         <option>Amandiego</option>
       </select>
@@ -24,15 +24,15 @@
 
     <div class="uk-margin">
       <label class="uk-form-label">Location</label>
-      <input class="uk-input" type="text" placeholder="Location">
+      <input name="location" class="uk-input" type="text" placeholder="Location">
     </div>
     <!-- Add Maps Here -->
   </fieldset>
   <hr>
   <fieldset class="uk-fieldset">
       <div class="uk-margin">
-        <label class="uk-form-label">Project Fund</label>
-        <select class="uk-select">
+        <label class="uk-form-label">Project Fund Type</label>
+        <select name="project-fund-type" class="uk-select">
           <option>Development Fund</option>
           <option>Financial Assistance</option>
         </select>
@@ -40,8 +40,8 @@
   </fieldset>
   <p uk-margin>
     <div class="uk-flex uk-flex-center@m uk-flex-right@l">
-        <button class="uk-button-left uk-button uk-button-default">Cancel</button>
-        <button class="uk-button uk-button-primary">Submit</button>
+        <a name="cancel" href="/projects" class="uk-button-left uk-button uk-button-default">Cancel</a>
+        <button type="submit" class="uk-button uk-button-primary">Submit</button>
     </div>
   </p>
 </form>

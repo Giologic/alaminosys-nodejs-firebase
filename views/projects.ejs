@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include partials/head %>
+</head>
+<body>
+  <% include partials/menu %>
+  <div class="table-uk-container uk-container uk-container-small">
+    <% if ( page === 'project_list' ) { %>
+      <% include partials/project_list %>
+    <% } else if ( page === 'project_form' ) { %>
+      <% include partials/project_form %>
+    <% } else if ( page === 'project_details' ) { %>
+      <% include partials/project_details %>
+    <% } %>
+  </div>
+  <% include partials/script %>
+</body>
+</html>

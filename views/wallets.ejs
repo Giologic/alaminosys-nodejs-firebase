@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <% include partials/head %>
@@ -6,8 +6,12 @@
 <body>
   <% include partials/menu %>
   <div class="table-uk-container uk-container uk-container-small">
-    <% include partials/project_view %>
+    <% if ( page === 'wallet_list' ) { %>
+      <% include partials/wallet_list %>
+    <% } else if ( page === 'wallet_details' ) { %>
+      <% include partials/wallet_details %>
+    <% } %>
   </div>
   <% include partials/script %>
 </body>
-</html> -->
+</html>
